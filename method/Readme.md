@@ -1,6 +1,6 @@
 # Research Question Formulation
 ## Objective
-RQ1: How do different machine learning methods differ in terms of their predictive accuracy when forecasting gas used? \\
+RQ1: How do different machine learning methods differ in terms of their predictive accuracy when forecasting gas used? <br>
 RQ2: Which machine learning approach demonstrates the best consistent predictive performance in both market stability and periods of market volatility?
 ## Significance
 # Operational Measures
