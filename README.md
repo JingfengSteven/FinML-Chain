@@ -4,8 +4,8 @@
 <table>
     <tr>
         <td> Cross Validation Results at NFT-airdrop period</td>
-        <td><img src=".results/Cross-validation results for different algorithms in NFT airdrop period.png" alt="dex-to-cex"></td>
-        <td><a href=".results/Cross-validation results for different algorithms in NFT airdrop period.png">./Images/DtC.png</a></td>
+        <td><img src="./results/Cross-validation results for different algorithms in NFT airdrop period.png" alt="dex-to-cex"></td>
+        <td><a href="./results/Cross-validation results for different algorithms in NFT airdrop period.png">./Images/DtC.png</a></td>
     </tr>
     <tr>
         <td> Accuracy Comparison at NFT-airdrop period </td>
