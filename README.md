@@ -67,7 +67,7 @@ For varying periods $k$, the regressor variable for the preceding $k$ data point
 <table>
     <tr>
         <td> Train-test split in NFT-airdrop period </td>
-        <td><img src="./results/none nft-position.png" alt="cex-to-dex"></td>
+        <td><img src="./results/none_nft-position.png" alt="cex-to-dex"></td>
         
     </tr>
     <tr>
