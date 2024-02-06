@@ -67,7 +67,7 @@ For varying periods $k$, the regressor variable for the preceding $k$ data point
     
     <tr>
         <td> Train-test split in normal period </td>
-        <td><img src="./results/nft-position.png" alt="cex-to-dex"><img src="./results/none nft-position.png" alt="cex-to-dex"></td>
+        <td><img src="./results/nft-position.png" alt="cex-to-dex"></td>
  
     </tr>
     
