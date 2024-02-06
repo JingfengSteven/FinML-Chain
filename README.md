@@ -116,6 +116,35 @@ For varying periods $k$, the regressor variable for the preceding $k$ data point
     </tr>
 </table>
 
+###  The training of DNN
+<table>
+    <tr>
+        <td> Training in NFT-airdrop period</td>
+        <td><img src="./results/Cross-validation results for different algorithms in normal period.png" alt="dex-to-cex"></td>
+        <td><a href="./results/Cross-validation results for different algorithms in normal period.png">Training curve in NFT-airdrop period</a></td>
+    </tr>
+    <tr>
+        <td> Training in normal period </td>
+        <td><img src="./results/s2.png" alt="cex-to-dex"></td>
+        <td><a href="./results/s2.png">Training curve in normal period</a></td>
+    </tr>
+    </table>
+    
+    
+###  Comparision between DNN and linear regression
+<table>
+    <tr>
+        <td> Comparision in NFT-airdrop period</td>
+        <td><img src="./results/Cross-validation results for different algorithms in normal period.png" alt="dex-to-cex"></td>
+        <td><a href="./results/Cross-validation results for different algorithms in normal period.png">Comparision in NFT-airdrop period</a></td>
+    </tr>
+    <tr>
+        <td> Comparision in normal period </td>
+        <td><img src="./results/s2.png" alt="cex-to-dex"></td>
+        <td><a href="./results/s2.png">Comparision in normal period</a></td>
+    </tr>
+    </table>
+
 
 
 ## Reference
