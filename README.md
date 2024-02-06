@@ -64,18 +64,15 @@ For varying periods $k$, the regressor variable for the preceding $k$ data point
 ### Train-test split
 
 <table>
-    <tr>
-        <td> Train-test split in NFT-airdrop period</td>
-        <td><img src="./results/nft-position.png" alt="dex-to-cex"></td>
-        
-    </tr>
+    
     <tr>
         <td> Train-test split in normal period </td>
-        <td><img src="./results/none nft-position.png" alt="cex-to-dex"></td>
+        <td><img src="./results/nft-position.png" alt="cex-to-dex"><img src="./results/none nft-position.png" alt="cex-to-dex"></td>
  
     </tr>
     
 </table>
+
 ###  NFT airdrop period
 <table>
     <tr>
@@ -99,9 +96,10 @@ For varying periods $k$, the regressor variable for the preceding $k$ data point
 <table>
     <tr>
         <td> Cross Validation Results at Normal period</td>
-        <td><img src="./Images/DtC.png" alt="dex-to-cex"></td>
-        <td><a href="./Images/DtC.png">Cross Validation Results in normal period</a></td>
+        <td><img src="./results/Cross-validation results for different algorithms in normal period.png" alt="dex-to-cex"></td>
+        <td><a href="./results/Cross-validation results for different algorithms in normal period.png">Cross Validation Results in normal period</a></td>
     </tr>
+
     <tr>
         <td> Accuracy Comparison at Normal period </td>
         <td><img src="./results/s2.png" alt="cex-to-dex"></td>
