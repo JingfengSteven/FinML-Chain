@@ -61,13 +61,17 @@ For varying periods $k$, the regressor variable for the preceding $k$ data point
 | [blockChainGasPrediction.ipynb](https://github.com/JingfengSteven/Chain_Science_24/blob/64c1cc6b642d8df8285cec8fd78b34f60ba66ecb/code/blockChainGasPrediction.ipynb)  | Using linear algorithm, DNN, XGBoost and long-short term memory to predict gas used. |
 
 ## Result
+
 ### Train-test split
 
 <table>
+    
     <tr>
         <td> Train-test split in normal period </td>
         <td><img src="./results/nft-position.png" alt="cex-to-dex"><img src="./results/none nft-position.png" alt="cex-to-dex"></td>
+ 
     </tr>
+    
 </table>
 
 ###  NFT airdrop period
@@ -96,7 +100,6 @@ For varying periods $k$, the regressor variable for the preceding $k$ data point
         <td><img src="./results/Cross-validation results for different algorithms in normal period.png" alt="dex-to-cex"></td>
         <td><a href="./results/Cross-validation results for different algorithms in normal period.png">Cross Validation Results in normal period</a></td>
     </tr>
-
     <tr>
         <td> Accuracy Comparison at Normal period </td>
         <td><img src="./results/s2.png" alt="cex-to-dex"></td>
@@ -108,6 +111,7 @@ For varying periods $k$, the regressor variable for the preceding $k$ data point
         <td><a href="./results/s4.png">Variance Comparison</a></td>
     </tr>
 </table>
+
 
 
 ## Reference
