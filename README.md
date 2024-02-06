@@ -60,7 +60,7 @@ For varying periods $k$, the regressor variable for the preceding $k$ data point
 | ------------- | -------------  | 
 | [blockChainGasPrediction.ipynb](https://github.com/JingfengSteven/Chain_Science_24/blob/64c1cc6b642d8df8285cec8fd78b34f60ba66ecb/code/blockChainGasPrediction.ipynb)  | Using linear algorithm, DNN, XGBoost and long-short term memory to predict gas used. |
 
-
+## Result
 <table>
     <tr>
         <td> Cross Validation Results at NFT-airdrop period</td>
@@ -78,3 +78,24 @@ For varying periods $k$, the regressor variable for the preceding $k$ data point
         <td><a href="./Images/Net.png">./Images/Net.png</a></td>
     </tr>
 </table>
+
+###  Normal period
+<table>
+    <tr>
+        <td> Cross Validation Results at Normal period</td>
+        <td><img src="./Images/DtC.png" alt="dex-to-cex"></td>
+        <td><a href="./Images/DtC.png">Cross Validation Results in normal period</a></td>
+    </tr>
+    <tr>
+        <td> Accuracy Comparison at Normal period </td>
+        <td><img src="./Images/CtD.png" alt="cex-to-dex"></td>
+        <td><a href="./Images/CtD.png">Accuracy Comparison</a></td>
+    </tr>
+    <tr>
+        <td> Variance Comparison at Normal period </td>
+        <td><img src="./Images/Net.png" alt="NetFlow"></td>
+        <td><a href="./Images/Net.png">Variance Comparison</a></td>
+    </tr>
+</table>
+
+## Reference
