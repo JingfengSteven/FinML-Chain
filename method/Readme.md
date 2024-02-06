@@ -116,7 +116,10 @@ The machine learning we selected are Linear Regression, Deep Neural Network, XGB
 ## Results Presentation
 
 ### Training and Testing
-### Data Visualization
+We conduct the train-test split through k-fold cross-validation with k=5, where the whole data set is split into 5 subsets for training, validating, and testing the model. Where the fraction of training data is 0.44, the fraction of validation data is 0.22, and the testing data is 0.34
+
 ## Model Evaluation
 ### Evaluation Criteria
+The model is evaluated by Mean Squared Error.
 ### Iterative Improvement
+The hyperparameter setting is the initial setting learning rate=0.001, while patience is 10, and early stopping is 12 epochs without a decrease of loss. (For both DNN and LSTM)
