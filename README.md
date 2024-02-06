@@ -70,12 +70,12 @@ For varying periods $k$, the regressor variable for the preceding $k$ data point
     <tr>
         <td> Accuracy Comparison at NFT-airdrop period </td>
         <td><img src="./Images/CtD.png" alt="cex-to-dex"></td>
-        <td><a href="./Images/CtD.png">./Images/CtD.png</a></td>
+        <td><a href="./Images/CtD.png">Accuracy Comparison</a></td>
     </tr>
     <tr>
         <td> Variance Comparison at NFT-airdrop period </td>
         <td><img src="./Images/Net.png" alt="NetFlow"></td>
-        <td><a href="./Images/Net.png">./Images/Net.png</a></td>
+        <td><a href="./Images/Net.png">Variance Comparison</a></td>
     </tr>
 </table>
 
@@ -83,8 +83,8 @@ For varying periods $k$, the regressor variable for the preceding $k$ data point
 <table>
     <tr>
         <td> Cross Validation Results at Normal period</td>
-        <td><img src="./Images/DtC.png" alt="dex-to-cex"></td>
-        <td><a href="./Images/DtC.png">Cross Validation Results in normal period</a></td>
+        <td><img src="./results/Cross-validation results for different algorithms in normal period.png" alt="dex-to-cex"></td>
+        <td><a href="./results/Cross-validation results for different algorithms in normal period.png">Cross Validation Results in normal period</a></td>
     </tr>
     <tr>
         <td> Accuracy Comparison at Normal period </td>
