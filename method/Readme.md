@@ -9,6 +9,7 @@ This initiative offers TFM designers a more refined reference point for contempl
 predictions.
 # Operational Measures
 ## Variables
+<body>
 <p>In the original dataset, the base fee is denominated in units of Gwei, where each Gwei is equivalent to $10^{-9}$ Ether. Consequently, for enhanced interpretability of the dataset, we scale the base fee by $10^{-9}$, expressing it in terms of Ether.</p>
 
 <p>We create a regressor, denoted as $\alpha$, by computing the ratio of gas used to the gas limit. The predicted variable $Y$ represents the normalized gas used, determined by the formula:</p>
@@ -20,6 +21,7 @@ predictions.
 </blockquote>
 
 <p>For varying time spans \(k\), the regressor variable for the preceding \(k\) data points is collected into a list, forming the feature set \(X\). The variable \(Y\) corresponds precisely to the prediction variable for the data point at time \(t\).</p>
+</body>
 
 # Hypothesis Development
 ## Data Type
