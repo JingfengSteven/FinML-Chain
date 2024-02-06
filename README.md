@@ -18,7 +18,7 @@
 | [ETH-Normal.csv](https://github.com/JingfengSteven/Chain_Science_24/blob/64c1cc6b642d8df8285cec8fd78b34f60ba66ecb/data/ETH-Normal.csv)  | Raw Data  | Critical indicators related to gas during normal period  |
 
 #### Data Dictionary
-- **ETH-NFT-airdrop and ETH-Normal**
+- **ETH-NFT-airdrop.csv and ETH-Normal.csv**
 
 | Variable Name          | Description                       | Type    |
 |------------------------|-----------------------------------|---------|
@@ -34,7 +34,6 @@ In the original dataset, the base fee is denominated in units of Gwei, where eac
 
 We create a regressor, denoted as $\alpha$, by computing the ratio of gas used to the gas limit. The predicted variable $Y$ represents the normalized gas used, determined by the formula:
 
-\[ Y = \frac{{\text{{gasUsed}} - \text{{gasTarget}}}}{{\text{{gasTarget}}}} \]
 
 $$w = \frac{gasUsed-gasTarget}{gasTarget}$$,
 
