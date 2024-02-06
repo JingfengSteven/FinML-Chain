@@ -7,9 +7,12 @@
 ## Table of Contents
 
 - Data
+- Methodology
 - Code
 - Result
 - Reference
+
+## Data
 #### Collected Data
 #### Data Infomation
 | Data Files  | Data Type | Data Content |
