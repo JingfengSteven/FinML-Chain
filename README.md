@@ -61,21 +61,37 @@ For varying periods $k$, the regressor variable for the preceding $k$ data point
 | [blockChainGasPrediction.ipynb](https://github.com/JingfengSteven/Chain_Science_24/blob/64c1cc6b642d8df8285cec8fd78b34f60ba66ecb/code/blockChainGasPrediction.ipynb)  | Using linear algorithm, DNN, XGBoost and long-short term memory to predict gas used. |
 
 ## Result
+### Train-test split
+
+<table>
+    <tr>
+        <td> Train-test split in NFT-airdrop period</td>
+        <td><img src="./results/nft-position.png" alt="dex-to-cex"></td>
+        
+    </tr>
+    <tr>
+        <td> Train-test split in normal period </td>
+        <td><img src="./results/none nft-position.png" alt="cex-to-dex"></td>
+ 
+    </tr>
+    
+</table>
+###  NFT airdrop period
 <table>
     <tr>
         <td> Cross Validation Results at NFT-airdrop period</td>
         <td><img src="./results/Cross-validation results for different algorithms in NFT airdrop period.png" alt="dex-to-cex"></td>
-        <td><a href="./results/Cross-validation results for different algorithms in NFT airdrop period.png">./Images/DtC.png</a></td>
+        <td><a href="./results/Cross-validation results for different algorithms in NFT airdrop period.png">Cross Validation Results in NFT-airdrop period</a></td>
     </tr>
     <tr>
         <td> Accuracy Comparison at NFT-airdrop period </td>
-        <td><img src="./Images/CtD.png" alt="cex-to-dex"></td>
-        <td><a href="./Images/CtD.png">Accuracy Comparison</a></td>
+        <td><img src="./results/s1.png" alt="cex-to-dex"></td>
+        <td><a href="./results/s1.png"> Accuracy Comparison</a></td>
     </tr>
     <tr>
         <td> Variance Comparison at NFT-airdrop period </td>
-        <td><img src="./Images/Net.png" alt="NetFlow"></td>
-        <td><a href="./Images/Net.png">Variance Comparison</a></td>
+        <td><img src=".results/s3.png" alt="NetFlow"></td>
+        <td><a href=".results/s3.png">Variance Comparison</a></td>
     </tr>
 </table>
 
@@ -83,19 +99,20 @@ For varying periods $k$, the regressor variable for the preceding $k$ data point
 <table>
     <tr>
         <td> Cross Validation Results at Normal period</td>
-        <td><img src="./results/Cross-validation results for different algorithms in normal period.png" alt="dex-to-cex"></td>
-        <td><a href="./results/Cross-validation results for different algorithms in normal period.png">Cross Validation Results in normal period</a></td>
+        <td><img src="./Images/DtC.png" alt="dex-to-cex"></td>
+        <td><a href="./Images/DtC.png">Cross Validation Results in normal period</a></td>
     </tr>
     <tr>
         <td> Accuracy Comparison at Normal period </td>
-        <td><img src="./Images/CtD.png" alt="cex-to-dex"></td>
-        <td><a href="./Images/CtD.png">Accuracy Comparison</a></td>
+        <td><img src="./results/s2.png" alt="cex-to-dex"></td>
+        <td><a href="./results/s2.png">Accuracy Comparison</a></td>
     </tr>
     <tr>
         <td> Variance Comparison at Normal period </td>
-        <td><img src="./Images/Net.png" alt="NetFlow"></td>
-        <td><a href="./Images/Net.png">Variance Comparison</a></td>
+        <td><img src="./results/s4.png" alt="NetFlow"></td>
+        <td><a href="./results/s4.png">Variance Comparison</a></td>
     </tr>
 </table>
+
 
 ## Reference
