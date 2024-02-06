@@ -1,0 +1,14 @@
+SELECT
+  timestamp,
+  number,
+  gas_used,
+  gas_limit,
+  base_fee_per_gas
+FROM
+  `bigquery-public-data.ethereum_blockchain.live_blocks`
+
+WHERE
+  timestamp BETWEEN TIMESTAMP("2023-06-01") AND TIMESTAMP("2023-07-01")
+ORDER BY
+  timestamp ASC
+
