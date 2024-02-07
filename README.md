@@ -14,6 +14,12 @@
 
 ## Data
 #### Collected Data
+We collect the data through BigQuery, and the code we used is attached here.
+
+[Code for querying data](./data/DataQuery.txt)
+
+You can also refer to [BigQuery](https://console.cloud.google.com/bigquery?p=bigquery-public-data&d=crypto_ethereum_classic&page=dataset&project=psyched-service-412017&ws=!1m9!1m4!4m3!1sbigquery-public-data!2sethereum_blockchain!3slive_blocks!1m3!3m2!1sbigquery-public-data!2scrypto_ethereum_classic&pli=1) for more information. 
+
 #### Data Infomation
 | Data Files  | Data Type | Data Content |
 | ------------- | ------------- | ------------- |
@@ -151,3 +157,4 @@ For varying periods $k$, the regressor variable for the preceding $k$ data point
 
 
 ## Reference
+[Data reference](https://console.cloud.google.com/bigquery?p=bigquery-public-data&d=crypto_ethereum_classic&page=dataset&project=psyched-service-412017&ws=!1m9!1m4!4m3!1sbigquery-public-data!2sethereum_blockchain!3slive_blocks!1m3!3m2!1sbigquery-public-data!2scrypto_ethereum_classic&pli=1) 
