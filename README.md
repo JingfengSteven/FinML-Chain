@@ -75,16 +75,16 @@ For varying periods $k$, the regressor variable for the preceding $k$ data point
 
 <table>
     <tr>
-        <td> Train-test split in NFT-airdrop period </td>
-        <td><img src="./results/none_nft-position.png" alt="cex-to-dex"></td>
-        
+        <td> Train-test split at NFT-airdrop period</td>
+        <td><img src="./results/nft-position.png" alt="dex-to-cex"></td>
+        <td><a href="./results/nft-position.png">Train-test split at NFT-airdrop period</a></td>
     </tr>
     <tr>
-        <td> Train-test split in normal period </td>
-        <td><img src="./results/none nft-position.png" alt="cex-to-dex"></td>
-
+        <td> Train-test split at normal period</td>
+        <td><img src="./results/none nft-position.png" alt="dex-to-cex"></td>
+        <td><a href="./results/none nft-position.png">Train-test split at normal period</a></td>
     </tr>
-    
+   
 </table>
 
 ###  NFT airdrop period
