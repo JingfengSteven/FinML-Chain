@@ -1,3 +1,1 @@
-4 machine learning algorithms are evaluated in both the NFT airdrop period and the normal period. </br>
-Our results indicate that DNN achieves the best performance in both two periods of time. </br>
-Through checking the DNN's training loss and validation loss and conducting scalability tests on the DNN that is trained by normal period time data to assess its prediction performance during the NFT airdrop period, we find that it is not necessary to train a new model when NFT-airdrop occurs.
+
