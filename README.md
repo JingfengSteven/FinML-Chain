@@ -137,7 +137,7 @@ For varying periods $k$, the regressor variable for the preceding $k$ data point
 ###  Comparision between DNN and linear regression
 <table>
     <tr>
-        <td> Comparision in NFT-airdrop period</td>
+        <td> Comparision of DNN and Linear Regression</td>
         <td><img src="./results/comparison.1.png" alt="dex-to-cex"></td>
         <td><a href="./results/comparison.1.png">Comparision over Linear Regression and DNN over two periods</a></td>
     </tr>
