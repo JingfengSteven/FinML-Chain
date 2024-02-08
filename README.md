@@ -128,32 +128,20 @@ For varying periods $k$, the regressor variable for the preceding $k$ data point
 ###  The training of DNN
 <table>
     <tr>
-        <td> Training in NFT-airdrop period</td>
-        <td><img src="./results/  .png" alt="dex-to-cex"></td>
-        <td><a href="./results/  .png">Training curve in NFT-airdrop period</a></td>
+        <td> Training of DNN</td>
+        <td><img src="./results/training eporch.png" alt="dex-to-cex"></td>
+        <td><a href="./results/training eporch.png">Training curve of DNN</a></td>
     </tr>
-    <tr>
-        <td> Training in normal period </td>
-        <td><img src="./results/  .png" alt="cex-to-dex"></td>
-        <td><a href="./results/  .png">Training curve in normal period</a></td>
-    </tr>
-    </table>
-    
+</table>
     
 ###  Comparision between DNN and linear regression
 <table>
     <tr>
         <td> Comparision in NFT-airdrop period</td>
-        <td><img src="./results/  .png" alt="dex-to-cex"></td>
-        <td><a href="./results/ .png">Comparision in NFT-airdrop period</a></td>
+        <td><img src="./results/comparison.1.png" alt="dex-to-cex"></td>
+        <td><a href="./results/comparison.1.png">Comparision over Linear Regression and DNN over two periods</a></td>
     </tr>
-    <tr>
-        <td> Comparision in normal period </td>
-        <td><img src="./results/ .png" alt="cex-to-dex"></td>
-        <td><a href="./results/ .png">Comparision in normal period</a></td>
-    </tr>
-    </table>
-
+</table>
 
 
 ## Reference
