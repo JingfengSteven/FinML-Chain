@@ -146,9 +146,9 @@ For varying periods $k$, the regressor variable for the preceding $k$ data point
 ###  Heatmap of prediction
 <table>
     <tr>
-        <td> Comparision of DNN and Linear Regression</td>
+        <td> Heatmap of prediction</td>
         <td><img src="./results/final.png" alt="dex-to-cex"></td>
-        <td><a href="./results/final.1.png">Comparision over Linear Regression and DNN over two periods</a></td>
+        <td><a href="./results/final.1.png">Heatmap of prediction</a></td>
     </tr>
 </table>
 
