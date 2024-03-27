@@ -46,13 +46,13 @@ Gas limit and gas target are two significant indicators in TFM. Specifically, th
 Our approach uses the four machine learning models mentioned before to predict y, which represents the normalized gas use:
 
 
-$$Y = \frac{gasUsed-gasTarget}{gasTarget}$$,
+$$Y = \frac{gasUsed-gasTarget}{gasTarget}$$
 
 
 This formula will shift the y within a range of [-1,1]. Or, in simple terms, this formula compares the actual gas used to the target gas limit, allowing us to assess how far off the gas usage is from the intended target. The $X$ is the variable used as features, containing $\alpha$ and $\beta$. 
 The corresponding $\alpha$ and $\beta$ are calculated by the following formulas:
 
-$$\alpha = \frac{x_{1}}{x_{2}}$$, 
+$$\alpha = \frac{x_{1}}{x_{2}}$$
 
 $$\beta = base fee$$
 
