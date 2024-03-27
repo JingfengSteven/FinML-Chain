@@ -143,6 +143,15 @@ For varying periods $k$, the regressor variable for the preceding $k$ data point
     </tr>
 </table>
 
+###  Heatmap of prediction
+<table>
+    <tr>
+        <td> Comparision of DNN and Linear Regression</td>
+        <td><img src="./results/final.png" alt="dex-to-cex"></td>
+        <td><a href="./results/final.1.png">Comparision over Linear Regression and DNN over two periods</a></td>
+    </tr>
+</table>
+
 
 ## Reference
 [Data reference](https://console.cloud.google.com/bigquery?p=bigquery-public-data&d=crypto_ethereum_classic&page=dataset&project=psyched-service-412017&ws=!1m9!1m4!4m3!1sbigquery-public-data!2sethereum_blockchain!3slive_blocks!1m3!3m2!1sbigquery-public-data!2scrypto_ethereum_classic&pli=1) 
