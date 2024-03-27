@@ -44,7 +44,7 @@ In the original dataset, the base fee is denominated in units of Gwei, where eac
 We create a regressor, denoted as $\alpha$, by computing the ratio of gas used to the gas limit. The predicted variable $Y$ represents the normalized gas used, determined by the formula:
 
 
-$$w = \frac{gasUsed-gasTarget}{gasTarget}$$,
+$$Y = \frac{gasUsed-gasTarget}{gasTarget}$$,
 
 
 For varying periods $k$, the regressor variable for the preceding $k$ data points is collected into a list, forming the feature set $X$. The variable $Y$ corresponds precisely to the prediction variable for the data point at time $t$.
