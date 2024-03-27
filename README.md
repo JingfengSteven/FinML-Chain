@@ -41,10 +41,20 @@ You can also refer to [BigQuery](https://console.cloud.google.com/bigquery?p=big
 ## Methodology
 In the original dataset, the base fee is denominated in units of Gwei, where each Gwei is equivalent to $10^{-9}$ Ether. Consequently, for enhanced interpretability of the dataset, we scale the base fee by $10^{-9}$, expressing it in terms of Ether.
 
-We create a regressor, denoted as $\alpha$, by computing the ratio of gas used to the gas limit. The predicted variable $Y$ represents the normalized gas used, determined by the formula:
+Gas limit and gas target are two significant indicators in TFM. Specifically, the gas limit refers to the maximum amount of gas that can be consumed when executing smart contracts or transactions on each block. Gas target refers to the gas amount people want to achieve in one block. To ensure the efficiency of transactions, the gas target should equal half of the gas limit. 
+
+Our approach uses the four machine learning models mentioned before to predict y, which represents the normalized gas use:
 
 
 $$Y = \frac{gasUsed-gasTarget}{gasTarget}$$,
+
+
+This formula will shift the y within a range of [-1,1]. Or, in simple terms, this formula compares the actual gas used to the target gas limit, allowing us to assess how far off the gas usage is from the intended target. The $X$ is the variable used as features, containing $\alpha$ and $\beta$. 
+The corresponding $\alpha$ and $\beta$ are calculated by the following formulas:
+
+$$$\alpha$ = \frac{x1}{x2}$$,
+$$$\beta$ = base fee$$
+
 
 
 For varying periods $k$, the regressor variable for the preceding $k$ data points is collected into a list, forming the feature set $X$. The variable $Y$ corresponds precisely to the prediction variable for the data point at time $t$.
