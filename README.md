@@ -52,12 +52,13 @@ $$Y = \frac{gasUsed-gasTarget}{gasTarget}$$,
 This formula will shift the y within a range of [-1,1]. Or, in simple terms, this formula compares the actual gas used to the target gas limit, allowing us to assess how far off the gas usage is from the intended target. The $X$ is the variable used as features, containing $\alpha$ and $\beta$. 
 The corresponding $\alpha$ and $\beta$ are calculated by the following formulas:
 
-$$\alpha = \frac{x1}{x2}$$,
+$$\alpha = \frac{x_{1}}{x_{2}}$$, 
+
 $$\beta = base fee$$
 
 
 
-For varying periods $k$, the regressor variable for the preceding $k$ data points is collected into a list, forming the feature set $X$. The variable $Y$ corresponds precisely to the prediction variable for the data point at time $t$.
+where $x_1$ denotes the feature gas-used and $x_2$ denotes the feature gas-limit.For varying periods $k$, the regressor variable for the preceding $k$ data points is collected into a list, forming the feature set $X$. The variable $Y$ corresponds precisely to the prediction variable for the data point at time $t$.
 
 
 
