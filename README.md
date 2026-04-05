@@ -1,11 +1,11 @@
 <p align="center">
   <a href="https://huggingface.co/datasets/StevenJingfeng/FinML">
-    <img src="https://img.shields.io/badge/🤗_Hugging_Face-Dataset-yellow?style=for-the-badge" alt="Hugging Face Dataset"/>
+    <img src="https://img.shields.io/badge/🤗_Hugging_Face-Dataset-yellow?style=for-the-badge&logo=huggingface" alt="Hugging Face Dataset"/>
   </a>
-  <a href="LICENSE">
+  <a href="https://github.com/JingfengSteven/FinML-Chain/blob/main/LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License: MIT"/>
   </a>
-  <a href="#">
+  <a href="https://mlcommons.org/working-groups/data/croissant/">
     <img src="https://img.shields.io/badge/Format-Croissant-blue?style=for-the-badge" alt="Croissant Format"/>
   </a>
 </p>
@@ -16,6 +16,7 @@
 <p align="center">
   <a href="https://huggingface.co/datasets/StevenJingfeng/FinML"><b>🔗 Dataset on Hugging Face</b></a> •
   <a href="#benchmark-results"><b>📊 Benchmarks</b></a> •
+  <a href="#repository-structure"><b>📁 Structure</b></a> •
   <a href="#quick-start"><b>🚀 Quick Start</b></a>
 </p>
 
@@ -40,12 +41,12 @@ FinML-Chain is a reproducible, multi-modal dataset integrating **high-frequency 
 <table width="100%">
   <tr>
     <td width="50%" align="center">
-      <img src="results/s1.png" width="100%" alt="Token Airdrop Loss"/>
+      <img src="results/s1.png" width="95%" alt="Token Airdrop Loss"/>
       <br/>
       <sub><b>Average Loss (MSE)</b></sub>
     </td>
     <td width="50%" align="center">
-      <img src="results/s3.png" width="100%" alt="Token Airdrop Variance"/>
+      <img src="results/s3.png" width="95%" alt="Token Airdrop Variance"/>
       <br/>
       <sub><b>Variance Across Folds</b></sub>
     </td>
@@ -62,12 +63,12 @@ FinML-Chain is a reproducible, multi-modal dataset integrating **high-frequency 
 <table width="100%">
   <tr>
     <td width="50%" align="center">
-      <img src="results/s2.png" width="100%" alt="Normal Period Loss"/>
+      <img src="results/s2.png" width="95%" alt="Normal Period Loss"/>
       <br/>
       <sub><b>Average Loss (MSE)</b></sub>
     </td>
     <td width="50%" align="center">
-      <img src="results/s4.png" width="100%" alt="Normal Period Variance"/>
+      <img src="results/s4.png" width="95%" alt="Normal Period Variance"/>
       <br/>
       <sub><b>Variance Across Folds</b></sub>
     </td>
@@ -84,12 +85,12 @@ Neural Additive Models (NAM) with weak pairwise monotonicity ensure recent block
 
 <table width="100%">
   <tr>
-    <td width="50%" align="center">
-      <img src="results/training_loss_2_step.png" width="100%" alt="Training Loss"/>
+    <td width="100%" align="center">
+      <img src="results/training_loss_2_step.png" width="60%" alt="Training Loss"/>
       <br/>
       <sub><b>Two-Step Training Trajectory (k=3)</b></sub>
       <br/>
-      <sub>Stage 1: Standard training | Stage 2: Monotonicity regularization</sub>
+      <sub>Stage 1: Standard backpropagation | Stage 2: Monotonicity regularization</sub>
     </td>
   </tr>
 </table>
@@ -98,14 +99,14 @@ Neural Additive Models (NAM) with weak pairwise monotonicity ensure recent block
   <tr>
     <td width="50%" align="center">
       <a href="results/No_mono_trained.pdf">
-        <img src="results/No_mono_trained.png" width="100%" alt="Without Monotonicity"/>
+        <img src="results/No_mono_trained.png" width="95%" alt="Without Monotonicity"/>
       </a>
       <br/>
       <sub><b>Without Monotonicity Constraints</b></sub>
     </td>
     <td width="50%" align="center">
       <a href="results/All_trained.pdf">
-        <img src="results/All_trained.png" width="100%" alt="With Monotonicity"/>
+        <img src="results/All_trained.png" width="95%" alt="With Monotonicity"/>
       </a>
       <br/>
       <sub><b>With Monotonicity Constraints</b></sub>
@@ -113,7 +114,7 @@ Neural Additive Models (NAM) with weak pairwise monotonicity ensure recent block
   </tr>
 </table>
 
-*Click images to view PDF versions. Monotonicity preserves prediction patterns while enhancing interpretability.*
+*Note: Click images to view PDF versions. Monotonicity preserves prediction patterns while enhancing interpretability.*
 
 ### Improvement with Sentiment Information
 
@@ -121,14 +122,14 @@ Neural Additive Models (NAM) with weak pairwise monotonicity ensure recent block
   <tr>
     <td width="50%" align="center">
       <a href="results/Combined_prediction_40_data.pdf">
-        <img src="results/Combined_prediction_40_data.png" width="100%" alt="40 Datapoints"/>
+        <img src="results/Combined_prediction_40_data.png" width="95%" alt="40 Datapoints"/>
       </a>
       <br/>
       <sub><b>40 Datapoints</b></sub>
     </td>
     <td width="50%" align="center">
       <a href="results/Combined_prediction.pdf">
-        <img src="results/Combined_prediction.png" width="100%" alt="100 Datapoints"/>
+        <img src="results/Combined_prediction.png" width="95%" alt="100 Datapoints"/>
       </a>
       <br/>
       <sub><b>100 Datapoints</b></sub>
@@ -157,22 +158,23 @@ Neural Additive Models (NAM) with weak pairwise monotonicity ensure recent block
 ## Repository Structure
 
 ```
+FinML-Chain/
 ├── data/
 │   ├── ETH-Token-airdrop.csv          # 78,290 blocks (high volatility)
 │   ├── ETH-Normal.csv                 # 213,244 blocks (stable)
-│   └── discord_sentiment.json         # FinBERT processed
+│   └── discord_sentiment.json         # FinBERT processed text
 ├── code/
-│   ├── main_dataset_processing.ipynb  # NAM + Monotonicity
-│   ├── baseline_models.ipynb          # DNN, XGBoost, LSTM, Linear
-│   └── NAM_models.py                  # NAM architecture
-└── results/
-    ├── s1.png, s3.png                 # Token-airdrop comparisons
-    ├── s2.png, s4.png                 # Normal period comparisons
-    ├── training_loss_2_step.pdf       # Training trajectory
-    ├── No_mono_trained.pdf            # Predictions w/o constraints
-    ├── All_trained.pdf                # Predictions w/ constraints
-    ├── Combined_prediction_40_data.pdf # Sentiment (40 pts)
-    └── Combined_prediction.pdf        # Sentiment (100 pts)
+│   ├── main_dataset_processing_code.ipynb  # NAM + Monotonicity
+│   ├── baseline_dataset_processing_code.ipynb  # DNN, XGBoost, LSTM, Linear
+│   └── NAM_models.py                  # NAM architecture implementation
+├── results/
+│   ├── s1.png, s2.png, s3.png, s4.png # Benchmark comparisons
+│   ├── training_loss_2_step.pdf       # Monotonicity training trajectory
+│   ├── No_mono_trained.pdf            # Predictions without constraints
+│   ├── All_trained.pdf                # Predictions with constraints
+│   ├── Combined_prediction_40_data.pdf # Sentiment analysis (40 pts)
+│   └── Combined_prediction.pdf        # Sentiment analysis (100 pts)
+└── README.md
 ```
 
 ---
@@ -215,4 +217,4 @@ sentiment = dataset["discord_sentiment"]
 
 ## License
 
-MIT License - see [LICENSE](LICENSE) file for details.
+MIT License - see [LICENSE](https://github.com/JingfengSteven/FinML-Chain/blob/main/LICENSE) file for details.
