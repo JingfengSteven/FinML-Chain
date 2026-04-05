@@ -75,46 +75,38 @@ FinML-Chain is a reproducible, multi-modal dataset integrating **high-frequency 
   </tr>
 </table>
 
-**Key Findings:**
-- DNNs maintain robust performance with minimal degradation
-- Linear Regression, XGBoost, and LSTM exhibit significant error increases
-
 ### Improvement with Monotonicity Constraints
 
 Neural Additive Models (NAM) with weak pairwise monotonicity ensure recent blocks influence predictions more than distant ones.
 
-<table width="100%">
-  <tr>
-    <td width="100%" align="center">
-      <img src="results/training_loss_2_step.png" width="60%" alt="Training Loss"/>
-      <br/>
-      <sub><b>Two-Step Training Trajectory (k=3)</b></sub>
-      <br/>
-      <sub>Stage 1: Standard backpropagation | Stage 2: Monotonicity regularization</sub>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <a href="results/training_loss_2_step.pdf">
+    <img src="https://img.shields.io/badge/📉_View_Training_Loss_Trajectory-blue?style=for-the-badge" alt="Training Loss PDF"/>
+  </a>
+</p>
+
+<p align="center"><sub><b>Two-Step Training (k=3):</b> Stage 1: Standard backpropagation | Stage 2: Monotonicity regularization</sub></p>
 
 <table width="100%">
   <tr>
     <td width="50%" align="center">
       <a href="results/No_mono_trained.pdf">
-        <img src="results/No_mono_trained.png" width="95%" alt="Without Monotonicity"/>
+        <img src="https://img.shields.io/badge/📄_Without_Monotonicity-lightgrey?style=for-the-badge" alt="Without Monotonicity PDF"/>
       </a>
-      <br/>
+      <br/><br/>
       <sub><b>Without Monotonicity Constraints</b></sub>
     </td>
     <td width="50%" align="center">
       <a href="results/All_trained.pdf">
-        <img src="results/All_trained.png" width="95%" alt="With Monotonicity"/>
+        <img src="https://img.shields.io/badge/📄_With_Monotonicity-green?style=for-the-badge" alt="With Monotonicity PDF"/>
       </a>
-      <br/>
+      <br/><br/>
       <sub><b>With Monotonicity Constraints</b></sub>
     </td>
   </tr>
 </table>
 
-*Note: Click images to view PDF versions. Monotonicity preserves prediction patterns while enhancing interpretability.*
+<p align="center"><i>Click buttons above to view PDF figures. Monotonicity preserves prediction patterns while enhancing interpretability.</i></p>
 
 ### Improvement with Sentiment Information
 
@@ -122,16 +114,16 @@ Neural Additive Models (NAM) with weak pairwise monotonicity ensure recent block
   <tr>
     <td width="50%" align="center">
       <a href="results/Combined_prediction_40_data.pdf">
-        <img src="results/Combined_prediction_40_data.png" width="95%" alt="40 Datapoints"/>
+        <img src="https://img.shields.io/badge/📊_40_Datapoints-blue?style=for-the-badge" alt="40 Datapoints PDF"/>
       </a>
-      <br/>
+      <br/><br/>
       <sub><b>40 Datapoints</b></sub>
     </td>
     <td width="50%" align="center">
       <a href="results/Combined_prediction.pdf">
-        <img src="results/Combined_prediction.png" width="95%" alt="100 Datapoints"/>
+        <img src="https://img.shields.io/badge/📊_100_Datapoints-blue?style=for-the-badge" alt="100 Datapoints PDF"/>
       </a>
-      <br/>
+      <br/><br/>
       <sub><b>100 Datapoints</b></sub>
     </td>
   </tr>
@@ -168,7 +160,7 @@ FinML-Chain/
 │   ├── baseline_dataset_processing_code.ipynb  # DNN, XGBoost, LSTM, Linear
 │   └── NAM_models.py                  # NAM architecture implementation
 ├── results/
-│   ├── s1.png, s2.png, s3.png, s4.png # Benchmark comparisons
+│   ├── s1.png, s2.png, s3.png, s4.png # Benchmark comparisons (PNG)
 │   ├── training_loss_2_step.pdf       # Monotonicity training trajectory
 │   ├── No_mono_trained.pdf            # Predictions without constraints
 │   ├── All_trained.pdf                # Predictions with constraints
